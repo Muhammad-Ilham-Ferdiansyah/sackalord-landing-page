@@ -1,0 +1,125 @@
+//font
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+
+//Variable
+$primaryColor: #f49e25;
+$secondaryColor: #f5aa2d;
+$navColor: white;
+$textPrimary: #0d1f51;
+$textSecondary: #7394ff;
+
+//Mixin
+@mixin tombol {
+  border-radius: 1em;
+  border: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+//styles
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 51vmax;
+}
+
+.custom-nav {
+  .navbar-brand {
+    img {
+      width: 50px;
+      margin-top: -7px;
+    }
+    span {
+      color: $primaryColor;
+      font-weight: 700;
+      font-size: 1.4em;
+      margin-left: 0.5em;
+    }
+  }
+
+  #navbarNav {
+    .navbar-nav {
+      .nav-link {
+        color: $navColor;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-left: 2.5em;
+        transition: 0.3s color ease;
+
+        &:hover {
+          color: darken($primaryColor, 30%);
+        }
+      }
+      .sign-in-button {
+        @include tombol();
+        background-color: $navColor;
+        color: black;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    margin-top: -1em;
+    .navbar-brand {
+      img {
+        width: 50px;
+        margin-top: -7px;
+      }
+      span {
+        color: $navColor;
+        font-weight: 700;
+        font-size: 1.4em;
+        margin-left: 0.5em;
+      }
+    }
+  }
+}
+
+//custom section
+.custom-section {
+  margin-top: 5em;
+  h2 {
+    color: $textPrimary;
+    font-weight: 700;
+    font-size: 4em;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 2.5em;
+    color: $textPrimary;
+  }
+  p {
+    color: $textSecondary;
+    font-size: 1em;
+    margin-top: 1em;
+  }
+  .more {
+    @include tombol();
+    display: inline-block;
+    color: $navColor;
+    background-color: $primaryColor;
+    margin-right: 1em;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $primaryColor;
+      border: 1px solid $primaryColor;
+      background-color: transparent;
+    }
+  }
+  .contact {
+    display: inline-block;
+    color: $primaryColor;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s ease;
+
+    &:hover {
+      color: $textPrimary;
+    }
+  }
+}

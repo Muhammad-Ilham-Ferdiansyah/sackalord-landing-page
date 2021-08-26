@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url(../img/bg.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 51vmax;
+}
+
+.custom-nav .navbar-brand img {
+  width: 50px;
+  margin-top: -7px;
+}
+
+.custom-nav .navbar-brand span {
+  color: #f49e25;
+  font-weight: 700;
+  font-size: 1.4em;
+  margin-left: 0.5em;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-link {
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 2.5em;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+}
+
+.custom-nav #navbarNav .navbar-nav .nav-link:hover {
+  color: #7a4a06;
+}
+
+.custom-nav #navbarNav .navbar-nav .sign-in-button {
+  border-radius: 1em;
+  border: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 992px) {
+  .custom-nav {
+    margin-top: -1em;
+  }
+  .custom-nav .navbar-brand img {
+    width: 50px;
+    margin-top: -7px;
+  }
+  .custom-nav .navbar-brand span {
+    color: white;
+    font-weight: 700;
+    font-size: 1.4em;
+    margin-left: 0.5em;
+  }
+}
+
+.custom-section {
+  margin-top: 5em;
+}
+
+.custom-section h2 {
+  color: #0d1f51;
+  font-weight: 700;
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.custom-section h3 {
+  font-weight: 400;
+  font-size: 2.5em;
+  color: #0d1f51;
+}
+
+.custom-section p {
+  color: #7394ff;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.custom-section .more {
+  border-radius: 1em;
+  border: 0;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  display: inline-block;
+  color: white;
+  background-color: #f49e25;
+  margin-right: 1em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section .more:hover {
+  color: #f49e25;
+  border: 1px solid #f49e25;
+  background-color: transparent;
+}
+
+.custom-section .contact {
+  display: inline-block;
+  color: #f49e25;
+  text-decoration: none;
+  font-weight: 700;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-section .contact:hover {
+  color: #0d1f51;
+}
+/*# sourceMappingURL=main.css.map */
